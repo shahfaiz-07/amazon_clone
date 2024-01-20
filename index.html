@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Amazon Clone</title>
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <div class="navlogo hovborder">
+                <div id="amazonlogo"></div>
+            </div>
+            <div class="deliverbox hovborder">
+                <p id="deliverto">Deliver To</p>
+                <div id="iconloc">
+                    <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+                    <p id="address">India</p>
+                </div>
+            </div>
+            <div id="searchContainer">
+                <div id="departments">
+                    <p><span>All</span><i class="fa-solid fa-angle-down"></i></p>
+                </div>
+                <input type = "text" placeholder="Search Amazon" id="searchArea"/>
+                <div id="searchbutton">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="hovborder" id="language">
+                <div id="iconflag"></div>
+                <div id="selectlanguage">
+                    <p>EN <i class="fa-solid fa-angle-down"></i></p>
+                </div>
+            </div>
+            <div class="hellouser hovborder">
+                <p id="hello" class="firstline">Hello, sign in</p>
+                <p class="secondline">Account & Lists<i class="fa-solid fa-caret-down" style="margin-left: 0.3125rem; font-size: 0.75rem; color: #CCCCCC;"></i></p>
+            </div>
+            <div class="returnorder hovborder">
+                <p id="hello" class="firstline">Returns</p>
+                <p class="secondline">& Orders</p>
+            </div>
+            <div class="cart hovborder">
+                <div id="carticon"><i class="fa-brands fa-opencart"></i></div>
+                <p class="secondline" id="carttext">Cart</p>
+            </div>
+        </div>
+        <div id="nav2">
+            <div class="hovborder nav2container" id="menu">
+                <div id="menuicon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <p id="alltext" class="nav2text">All</p>
+            </div>
+            <a href="#" class="hovborder nav2text nav2container nav2con2" id="todaydeal">
+                Today's Deals
+            </a>
+            <a href="#" class="hovborder nav2text nav2container nav2con2" id="registry">
+                Registry
+            </a>
+            <a href="#" class="hovborder nav2text nav2container nav2con2" id="customnservice">
+                Customer Service
+            </a>
+            <a href="#" class="hovborder nav2text nav2container nav2con2" id="giftcard">
+                Gift Cards
+            </a>
+            <a href="#" class="hovborder nav2text nav2container nav2con2" id="sell">
+                Sell
+            </a>
+            <div style="flex-shrink:1; width:70%;"></div>
+            <a href="#" class="hovborder nav2text nav2container nav2con2" id="shopelectronic">
+                Shop deals in Electronics
+            </a>
+        </div>
+    </header>
+    <main>
+        <div id="herosection">
+            <div id="arrowscontainer">
+                <i class="fa-solid fa-chevron-left arrowicon"></i>
+                <div style="width:95%; flex-shrink:0;"></div>
+                <i class="fa-solid fa-chevron-right arrowicon"></i>
+            </div>
+            <div id="herodiv">
+                <p id="herotext">You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href="#" id="clickhere">Click here to go to amazon.in</a></p>
+            </div>
+        </div>
+        <div class="shopoptions">
+            <div id="gamecontainer" class="categories">
+                <div class="h2div"><h2>Gaming accessories</h2></div>
+                <div id="gamebox" class = "fourinone">
+                    <div class="fouritem">
+                        <div id="headsets" class="fourimage">
+                            <img src="images/headset1.jpg" height="100%"/>
+                        </div>
+                        <p>Headsets</p>
+                    </div>
+                    <div class="fouritem">
+                        <div id="keyboards" class ="fourimage">
+                            <img src="images/keyboards1.jpg" height="100%"/>
+                        </div>
+                        <p>Keyboards</p>
+                    </div>
+                    <div class="fouritem">
+                        <div id="mice" class="fourimage">
+                            <img src="images/mice1.jpg" height="100%"/>
+                        </div>
+                        <p>Computer Mice</p>
+                    </div>
+                    <div class="fouritem">
+                        <div id="chairs" class ="fourimage">
+                            <img src="images/chairs1.jpg" height="100%"/>
+                        </div>
+                        <p>Keyboards</p>
+                    </div>
+                    <a class="seemore" href="#">See More</a>
+                </div>
+            </div>
+            <div class="categories simple" id="pccontainer">
+                <div class="h2div"><h2>Deals in PCs</h2></div>
+                <div id="pcbox" class="itembox">
+                    <div id="pcimagecontainer" class="singleimagecontainer">
+                        <img src="images/pcs.jpg" alt="PC Image" height="100%"/>
+                    </div>
+                    <a href="#" class="shopnow">Shop Now</a>
+                </div>
+            </div>
+            <div id="refreshcontainer" class="categories">
+                <div class="h2div"><h2>Refresh your space</h2></div>
+                <div id="refreshbox" class = "fourinone">
+                    <div class="fouritem">
+                        <div id="dining" class="fourimage">
+                            <img src="images/dinning.jpg" height="100%"/>
+                        </div>
+                        <p>Dining</p>
+                    </div>
+                    <div class="fouritem">
+                        <div id="homesection" class ="fourimage">
+                            <img src="images/home.jpg" height="100%"/>
+                        </div>
+                        <p>Home</p>
+                    </div>
+                    <div class="fouritem">
+                        <div id="kitchen" class="fourimage">
+                            <img src="images/kitchen1.jpg" height="100%"/>
+                        </div>
+                        <p>Kitchen</p>
+                    </div>
+                    <div class="fouritem">
+                        <div id="health" class ="fourimage">
+                            <img src="images/healthandbeauty.jpg" height="100%"/>
+                        </div>
+                        <p>Health And Beauty</p>
+                    </div>
+                    <a class="seemore" href="#">See More</a>
+                </div>
+            </div>
+            <div class="categories simple" id="toys">
+                <div class="h2div"><h2>Toys under $25</h2></div>
+                <div id="toysbox" class="itembox">
+                    <div id="toysimagecontainer" class="singleimagecontainer">
+                        <img src="images/toys.jpg" alt="PC Image" height="100%"/>
+                    </div>
+                    <a href="#" class="shopnow">Shop Now</a>
+                </div>
+            </div>
+
+            <div id="beautysteals" class="categories simple">
+                <div class="h2div"><h2>Beauty steals under $25</h2></div>
+                <div id="beautybox" class="itembox">
+                    <div id="beautyimagecontainer" class="singleimagecontainer">
+                        <img src="images/beautydeals.jpg" alt="Lunar Image" height="100%"/>
+                    </div>
+                    <a href="#" class="shopnow">Shop Now</a>
+                </div>
+            </div>
+            <div id="fashioncontainer" class="categories">
+                <div class="h2div"><h2>Fashion trends you like</h2></div>
+                <div id="fashionbox" class = "fourinone">
+                    <div class="fouritem">
+                        <div id="dresses" class="fourimage">
+                            <img src="images/dresses.jpg" height="100%"/>
+                        </div>
+                        <p>Dresses</p>
+                    </div>
+                    <div class="fouritem">
+                        <div id="knits" class ="fourimage">
+                            <img src="images/knits.jpg" height="100%"/>
+                        </div>
+                        <p>Knits</p>
+                    </div>
+                    <div class="fouritem">
+                        <div id="jackets" class="fourimage">
+                            <img src="images/jackets.jpg" height="100%"/>
+                        </div>
+                        <p>Jackets</p>
+                    </div>
+                    <div class="fouritem">
+                        <div id="jewelry" class ="fourimage">
+                            <img src="images/jewelry.jpg" height="100%"/>
+                        </div>
+                        <p>Jewelry</p>
+                    </div>
+                    <a class="seemore" href="#">Explore More</a>
+                </div>
+            </div>
+            <div class="categories simple" id="lunar">
+                <div class="h2div"><h2>Lunar New Year</h2></div>
+                <div id="lunarbox" class="itembox">
+                    <div id="lunarimagecontainer" class="singleimagecontainer">
+                        <img src="images/lunar.jpg" alt="Lunar Image" height="100%"/>
+                    </div>
+                    <a href="#" class="shopnow">Shop Now</a>
+                </div>
+            </div>
+            <div class="categories simple" id="newyear">
+                <div class="h2div"><h2>New year, now you</h2></div>
+                <div id="newyearbox" class="itembox">
+                    <div id="newyearimagecontainer" class="singleimagecontainer">
+                        <img src="images/shopnow.jpg" alt="Lunar Image" height="100%"/>
+                    </div>
+                    <a href="#" class="shopnow">Shop Now</a>
+                </div>
+            </div>
+        </div>
+        <div id="computeraccessories" class="xscroller">
+            <div id="accessoriescontainer" class="scrollercontainer">
+                <h2>Best Sellers in Computers & Accessories</h2>
+                <div class="scrollbox" id="accessoriesscrollbox">
+                <div class="scrollerimagecontainer" id="accessoriesimagecontianer">
+                    <img src="images/access1.jpg" height="90%" />
+                    <span align="center"><img src="images/access2.jpg" height="90%" /></span>
+                    <img src="images/access3.jpg" height="90%" />
+                    <img src="images/access4.jpg" height="90%" />
+                    <img src="images/access5.jpg" height="90%" />
+                    <img src="images/access6.jpg" height="90%" />
+                    <img src="images/access7.jpg" height="90%" />
+                    <img src="images/access8.jpg" height="90%" />
+                    <img src="images/access9.jpg" height="90%" />
+                    <img src="images/access10.jpg" height="90%" />
+                    <img src="images/access11.jpg" height="90%" />
+                    <img src="images/access12.jpg" height="90%" />
+                    <img src="images/access13.jpg" height="90%" />
+                    <img src="images/access14.jpg" height="90%" />
+                    <img src="images/access15.jpg" height="90%" />
+                    <img src="images/access16.jpg" height="90%" />
+                    <img src="images/access17.jpg" height="90%" />
+                    <img src="images/access18.jpg" height="90%" />
+                    <img src="images/access19.jpg" height="90%" />
+                    <img src="images/access20.jpg" height="90%" />
+                    <img src="images/access21.jpg" height="90%" />
+                    <img src="images/access22.jpg" height="90%" />
+                    <img src="images/access23.jpg" height="90%" />
+                </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="signincontainer">
+            <p id="recomtext">See personalised recomendations</p>
+            <div id="singindiv" align="center">
+                <button>Sign in</button>
+            </div>
+            <p id="newcustomer">New customer? <a href="#">Start here.</a></p>
+        </div>
+        <div id="footer1">
+            <p>Back to Top</p>
+        </div>
+        <div id="footer2">
+            <div class="footer2container" id="knowuscontainer">
+                <p>Get to Know Us</p>
+                <br>
+                <ul>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About Amazon</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Amazon Devices</a></li>
+                    <li><a href="#">Amazon Science</a></li>
+                </ul>
+            </div>
+            <div class="footer2container" id="makemoneycontainer">
+                <p>Make Money with Us</p>
+                <br>
+                <ul>
+                    <li><a href="#">Sell products on Amazon</a></li>
+                    <li><a href="#">Sell on Amazon Business</a></li>
+                    <li><a href="#">Sell apps on Amazon</a></li>
+                    <li><a href="#">Become an Affiliate</a></li>
+                    <li><a href="#">Advertise Your Products</a></li>
+                    <li><a href="#">Self-Publish with Us</a></li>
+                    <li><a href="#">Host an Amazon Hub</a></li>
+                    <li><a href="#">› See More Make Money <br>with Us</a></li>
+                </ul>
+            </div>
+            <div class="footer2container" id="paymentcontainer">
+                <p>Amazon Payment Products</p>
+                <br>
+                <ul>
+                    <li><a href="#">Amazon Business Card</a></li>
+                    <li><a href="#">Shop with Points</a></li>
+                    <li><a href="#">Reload Your Balance</a></li>
+                    <li><a href="#">Amazon Currency Converter</a></li>
+                </ul>
+            </div>
+            <div class="footer2container" id="helpyoucontainer">
+                <p>Let Us Help You</p>
+                <br>
+                <ul>
+                    <li><a href="#">Amazon and COVID-<br>19</a></li>
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="#">Your Orders</a></li>
+                    <li><a href="#">Shipping Rates & <br>Policies</a></li>
+                    <li><a href="#">Returns & <br>Replacements</a></li>
+                    <li><a href="#">Manage Your <br>Content and Devices</a></li>
+                    <li><a href="#">Amazon Assistant</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer3">
+            <div id="footer3container">
+                <img src="images/amazon_logo.png" height="60%" id="footer3amazonlogo">
+                <div id="footerlanguagediv" class="footer3divs">
+                    <i class="fa-solid fa-globe"></i>
+                    <span id="langtext" class="footer3text">English</span>
+                    <span id="updown">
+                        <i class="fa-solid fa-sort"></i>
+                    </span>
+                </div>
+                <div class="footer3divs" id="currencydiv">
+                    $<span class="footer3text">USD - U.S. Dollar</span>
+                </div>
+                <div class="footer3divs" id="region">
+                    <img src="images/us.png" style="height: 0.9rem;"/>
+                    <div class="footer3text">United States</div>
+                </div>
+            </div>
+        </div>
+        <div id="endfooter">
+            <div class="endfooterdivs">
+                <table>
+                    <tr>
+                        <td>Amazon Music<br><span>Stream millions<br>of songs</span></td>
+                        <td>Amazon Ads<br><span>
+Reach customers<br>
+wherever they<br>
+spend their time</span></td>
+                        <td>6pm<span><br>
+Score deals<br>
+on fashion<br>brands</span></td>
+                        <td>AbeBooks<br><span>
+Books, art<br>
+& collectibles</span></td>
+                        <td>ACX<br><span>
+Audiobook Publishing<br>
+Made Easy</span></td>
+                        <td>Sell on Amazon<br><span>
+Start a Selling<br>Account</span></td>
+                        <td>Amazon<br>Business<br><span>
+Everything <br>For<br>
+Your <br>Business</span></td>
+                    </tr>
+                    <tr>
+                        <td>AmazonGlobal<br><span>
+Ship Orders<br>
+Internationally</span></td>
+                        <td>Home Services<br><span>
+Experienced Pros<br>
+Happiness<br>Guarantee</span></td>
+                        <td>Amazon Web<br>Services<br><span>
+Scalable Cloud<br>
+Computing<br>Services</span></td>
+                        <td>Audible<br><span>
+Listen to Books &<br>Original<br>
+Audio<br>Performances</span></td>
+                        <td>Box Office Mojo<br><span>
+Find Movie<br>
+Box Office Data</span></td>
+                        <td>Goodreads<br><span>
+Book reviews<br>
+&<br>recommendations</span></td>
+                        <td>IMDb<br><span>
+Movies, TV<br>
+& Celebrities</span></td>
+                    </tr>
+                    <tr>
+                        <td>IMDbPro<br><span>
+Get Info<br>Entertainment<br>
+Professionals<br>Need</span></td>
+                        <td>Kindle Direct<br>Publishing<br><span>
+Indie Digital &<br>Print Publishing<br>
+Made Easy</span></td>
+                        <td>Prime Video<br>Direct<br><span>
+Video<br>Distribution<br>
+Made Easy</span></td>
+                        <td>Shopbop<br><span>
+Designer<br>
+Fashion Brands</span></td>
+                        <td>Woot!<br><span>
+Deals and<br>
+Shenanigans</span></td>
+                        <td>Zappos<br><span>
+Shoes &<br>
+Clothing</span></td>
+                        <td>Ring<br><span>
+Smart Home<br>
+Security<br>Systems</span></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>eero WiFi<br><span>
+Stream 4K Video<br>
+in Every Room</span></td>
+                        <td>Blink<br><span>
+Smart Security<br>
+for Every<br>Home</span></td>
+                        <td>Neighbors App<br><span>
+Real-Time Crime<br>
+& Safety Alerts</span></td>
+                        <td>Amazon Subscription<br>Boxes<br><span>
+Top subscription boxes<br>– right to your door</span></td>
+                        <td>PillPack<br><span>
+Pharmacy<br>Simplified</span></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="endfooterdivs"></div>
+            <div class="endfooterdivs"></div>
+            <div class="endfooterdivs"></div>
+            <div class="endfooterdivs"></div>
+            <div class="endfooterdivs"></div>
+            <div class="endfooterdivs"></div>
+        </div>
+        <div id="copyrightcontainer" align="center">
+            <a href="#">Conditions of Use</a>
+            <a href="#">Privacy Notice</a>
+            <a href="#">Your Ads Privacy Choices</a>
+            <i class="fa-regular fa-circle-check" style="color: #74C0FC;margin-left:0.3125rem;"></i>
+            <br/>
+            <p>© 1996-2024, Amazon.com, Inc. or its affiliates</p>
+        </div>
+    </footer>
+</body>
+</html>
